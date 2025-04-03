@@ -8,19 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		A1F8AC282D9EAD7B009A1DB1 /* MVarchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC272D9EAD7B009A1DB1 /* MVarchApp.swift */; };
-		A1F8AC2A2D9EAD7B009A1DB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC292D9EAD7B009A1DB1 /* ContentView.swift */; };
 		A1F8AC2C2D9EAD7B009A1DB1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC2B2D9EAD7B009A1DB1 /* Item.swift */; };
 		A1F8AC2E2D9EAD7E009A1DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F8AC2D2D9EAD7E009A1DB1 /* Assets.xcassets */; };
 		A1F8AC312D9EAD7E009A1DB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F8AC302D9EAD7E009A1DB1 /* Preview Assets.xcassets */; };
+		A1F8AC3E2D9EAEF9009A1DB1 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC372D9EAEF9009A1DB1 /* MainRouter.swift */; };
+		A1F8AC3F2D9EAEF9009A1DB1 /* MarketRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC382D9EAEF9009A1DB1 /* MarketRoute.swift */; };
+		A1F8AC402D9EAEF9009A1DB1 /* NavigationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC3A2D9EAEF9009A1DB1 /* NavigationContainerView.swift */; };
+		A1F8AC412D9EAEF9009A1DB1 /* NavigationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC3B2D9EAEF9009A1DB1 /* NavigationNode.swift */; };
+		A1F8AC422D9EAEF9009A1DB1 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC3C2D9EAEF9009A1DB1 /* NavigationState.swift */; };
+		A1F8AC442D9EAFE8009A1DB1 /* MarketListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC432D9EAFE8009A1DB1 /* MarketListScreen.swift */; };
+		A1F8AC462D9EB035009A1DB1 /* MarketFilterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC452D9EB035009A1DB1 /* MarketFilterScreen.swift */; };
+		A1F8AC4A2D9EBF4B009A1DB1 /* MarketListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC492D9EBF4B009A1DB1 /* MarketListItemView.swift */; };
+		A1F8AC4C2D9EBF5F009A1DB1 /* MarketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC4B2D9EBF5F009A1DB1 /* MarketListViewModel.swift */; };
+		A1F8AC4F2D9EBFC1009A1DB1 /* MarketRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC4E2D9EBFC1009A1DB1 /* MarketRepository.swift */; };
+		A1F8AC522D9EC768009A1DB1 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC512D9EC768009A1DB1 /* Injector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1F8AC242D9EAD7B009A1DB1 /* MVarch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVarch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F8AC272D9EAD7B009A1DB1 /* MVarchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVarchApp.swift; sourceTree = "<group>"; };
-		A1F8AC292D9EAD7B009A1DB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1F8AC2B2D9EAD7B009A1DB1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A1F8AC2D2D9EAD7E009A1DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F8AC302D9EAD7E009A1DB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1F8AC372D9EAEF9009A1DB1 /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		A1F8AC382D9EAEF9009A1DB1 /* MarketRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketRoute.swift; sourceTree = "<group>"; };
+		A1F8AC3A2D9EAEF9009A1DB1 /* NavigationContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationContainerView.swift; sourceTree = "<group>"; };
+		A1F8AC3B2D9EAEF9009A1DB1 /* NavigationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationNode.swift; sourceTree = "<group>"; };
+		A1F8AC3C2D9EAEF9009A1DB1 /* NavigationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
+		A1F8AC432D9EAFE8009A1DB1 /* MarketListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListScreen.swift; sourceTree = "<group>"; };
+		A1F8AC452D9EB035009A1DB1 /* MarketFilterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketFilterScreen.swift; sourceTree = "<group>"; };
+		A1F8AC492D9EBF4B009A1DB1 /* MarketListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListItemView.swift; sourceTree = "<group>"; };
+		A1F8AC4B2D9EBF5F009A1DB1 /* MarketListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListViewModel.swift; sourceTree = "<group>"; };
+		A1F8AC4E2D9EBFC1009A1DB1 /* MarketRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRepository.swift; sourceTree = "<group>"; };
+		A1F8AC512D9EC768009A1DB1 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +74,9 @@
 			isa = PBXGroup;
 			children = (
 				A1F8AC272D9EAD7B009A1DB1 /* MVarchApp.swift */,
-				A1F8AC292D9EAD7B009A1DB1 /* ContentView.swift */,
+				A1F8AC3D2D9EAEF9009A1DB1 /* Navigation */,
+				A1F8AC4D2D9EBFBC009A1DB1 /* Model */,
+				A1F8AC472D9EBF3D009A1DB1 /* Screens */,
 				A1F8AC2B2D9EAD7B009A1DB1 /* Item.swift */,
 				A1F8AC2D2D9EAD7E009A1DB1 /* Assets.xcassets */,
 				A1F8AC2F2D9EAD7E009A1DB1 /* Preview Content */,
@@ -68,6 +90,62 @@
 				A1F8AC302D9EAD7E009A1DB1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1F8AC392D9EAEF9009A1DB1 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8AC372D9EAEF9009A1DB1 /* MainRouter.swift */,
+				A1F8AC382D9EAEF9009A1DB1 /* MarketRoute.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		A1F8AC3D2D9EAEF9009A1DB1 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8AC392D9EAEF9009A1DB1 /* Routers */,
+				A1F8AC3A2D9EAEF9009A1DB1 /* NavigationContainerView.swift */,
+				A1F8AC3B2D9EAEF9009A1DB1 /* NavigationNode.swift */,
+				A1F8AC3C2D9EAEF9009A1DB1 /* NavigationState.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A1F8AC472D9EBF3D009A1DB1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8AC502D9EC693009A1DB1 /* Filter */,
+				A1F8AC482D9EBF42009A1DB1 /* List */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A1F8AC482D9EBF42009A1DB1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8AC432D9EAFE8009A1DB1 /* MarketListScreen.swift */,
+				A1F8AC4B2D9EBF5F009A1DB1 /* MarketListViewModel.swift */,
+				A1F8AC492D9EBF4B009A1DB1 /* MarketListItemView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A1F8AC4D2D9EBFBC009A1DB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8AC512D9EC768009A1DB1 /* Injector.swift */,
+				A1F8AC4E2D9EBFC1009A1DB1 /* MarketRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1F8AC502D9EC693009A1DB1 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				A1F8AC452D9EB035009A1DB1 /* MarketFilterScreen.swift */,
+			);
+			path = Filter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +218,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F8AC2A2D9EAD7B009A1DB1 /* ContentView.swift in Sources */,
+				A1F8AC412D9EAEF9009A1DB1 /* NavigationNode.swift in Sources */,
+				A1F8AC422D9EAEF9009A1DB1 /* NavigationState.swift in Sources */,
+				A1F8AC3F2D9EAEF9009A1DB1 /* MarketRoute.swift in Sources */,
+				A1F8AC3E2D9EAEF9009A1DB1 /* MainRouter.swift in Sources */,
+				A1F8AC522D9EC768009A1DB1 /* Injector.swift in Sources */,
 				A1F8AC2C2D9EAD7B009A1DB1 /* Item.swift in Sources */,
+				A1F8AC442D9EAFE8009A1DB1 /* MarketListScreen.swift in Sources */,
+				A1F8AC462D9EB035009A1DB1 /* MarketFilterScreen.swift in Sources */,
+				A1F8AC4C2D9EBF5F009A1DB1 /* MarketListViewModel.swift in Sources */,
+				A1F8AC4A2D9EBF4B009A1DB1 /* MarketListItemView.swift in Sources */,
+				A1F8AC4F2D9EBFC1009A1DB1 /* MarketRepository.swift in Sources */,
+				A1F8AC402D9EAEF9009A1DB1 /* NavigationContainerView.swift in Sources */,
 				A1F8AC282D9EAD7B009A1DB1 /* MVarchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
