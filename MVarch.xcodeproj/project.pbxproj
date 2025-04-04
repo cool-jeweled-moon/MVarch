@@ -11,9 +11,6 @@
 		A1F8AC2C2D9EAD7B009A1DB1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC2B2D9EAD7B009A1DB1 /* Item.swift */; };
 		A1F8AC2E2D9EAD7E009A1DB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F8AC2D2D9EAD7E009A1DB1 /* Assets.xcassets */; };
 		A1F8AC312D9EAD7E009A1DB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F8AC302D9EAD7E009A1DB1 /* Preview Assets.xcassets */; };
-		A1F8AC402D9EAEF9009A1DB1 /* NavigationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC3A2D9EAEF9009A1DB1 /* NavigationContainerView.swift */; };
-		A1F8AC412D9EAEF9009A1DB1 /* NavigationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC3B2D9EAEF9009A1DB1 /* NavigationNode.swift */; };
-		A1F8AC422D9EAEF9009A1DB1 /* NavigationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC3C2D9EAEF9009A1DB1 /* NavigationState.swift */; };
 		A1F8AC442D9EAFE8009A1DB1 /* MarketListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC432D9EAFE8009A1DB1 /* MarketListScreen.swift */; };
 		A1F8AC462D9EB035009A1DB1 /* MarketFilterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC452D9EB035009A1DB1 /* MarketFilterScreen.swift */; };
 		A1F8AC4A2D9EBF4B009A1DB1 /* MarketListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC492D9EBF4B009A1DB1 /* MarketListItemView.swift */; };
@@ -24,6 +21,8 @@
 		A1F8AC622D9FACBC009A1DB1 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC5F2D9FACBC009A1DB1 /* AppRouter.swift */; };
 		A1F8AC632D9FACBC009A1DB1 /* MarketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F8AC602D9FACBC009A1DB1 /* MarketRouter.swift */; };
 		A1F8AC662D9FADA8009A1DB1 /* NavigationGraph in Frameworks */ = {isa = PBXBuildFile; productRef = A1F8AC652D9FADA8009A1DB1 /* NavigationGraph */; };
+		A1F8AC682D9FB1D3009A1DB1 /* NavigationGraph in Frameworks */ = {isa = PBXBuildFile; productRef = A1F8AC672D9FB1D3009A1DB1 /* NavigationGraph */; };
+		A1F8AC6A2D9FB1E5009A1DB1 /* NavigationGraph in Frameworks */ = {isa = PBXBuildFile; productRef = A1F8AC692D9FB1E5009A1DB1 /* NavigationGraph */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +31,6 @@
 		A1F8AC2B2D9EAD7B009A1DB1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A1F8AC2D2D9EAD7E009A1DB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F8AC302D9EAD7E009A1DB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A1F8AC3A2D9EAEF9009A1DB1 /* NavigationContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationContainerView.swift; sourceTree = "<group>"; };
-		A1F8AC3B2D9EAEF9009A1DB1 /* NavigationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationNode.swift; sourceTree = "<group>"; };
-		A1F8AC3C2D9EAEF9009A1DB1 /* NavigationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationState.swift; sourceTree = "<group>"; };
 		A1F8AC432D9EAFE8009A1DB1 /* MarketListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListScreen.swift; sourceTree = "<group>"; };
 		A1F8AC452D9EB035009A1DB1 /* MarketFilterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketFilterScreen.swift; sourceTree = "<group>"; };
 		A1F8AC492D9EBF4B009A1DB1 /* MarketListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListItemView.swift; sourceTree = "<group>"; };
@@ -52,6 +48,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F8AC662D9FADA8009A1DB1 /* NavigationGraph in Frameworks */,
+				A1F8AC6A2D9FB1E5009A1DB1 /* NavigationGraph in Frameworks */,
+				A1F8AC682D9FB1D3009A1DB1 /* NavigationGraph in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +77,6 @@
 			children = (
 				A1F8AC272D9EAD7B009A1DB1 /* MVarchApp.swift */,
 				A1F8AC612D9FACBC009A1DB1 /* Routers */,
-				A1F8AC3D2D9EAEF9009A1DB1 /* Navigation */,
 				A1F8AC4D2D9EBFBC009A1DB1 /* Model */,
 				A1F8AC472D9EBF3D009A1DB1 /* Screens */,
 				A1F8AC2B2D9EAD7B009A1DB1 /* Item.swift */,
@@ -95,16 +92,6 @@
 				A1F8AC302D9EAD7E009A1DB1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A1F8AC3D2D9EAEF9009A1DB1 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				A1F8AC3A2D9EAEF9009A1DB1 /* NavigationContainerView.swift */,
-				A1F8AC3B2D9EAEF9009A1DB1 /* NavigationNode.swift */,
-				A1F8AC3C2D9EAEF9009A1DB1 /* NavigationState.swift */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		A1F8AC472D9EBF3D009A1DB1 /* Screens */ = {
@@ -179,6 +166,8 @@
 			name = MVarch;
 			packageProductDependencies = (
 				A1F8AC652D9FADA8009A1DB1 /* NavigationGraph */,
+				A1F8AC672D9FB1D3009A1DB1 /* NavigationGraph */,
+				A1F8AC692D9FB1E5009A1DB1 /* NavigationGraph */,
 			);
 			productName = MVarch;
 			productReference = A1F8AC242D9EAD7B009A1DB1 /* MVarch.app */;
@@ -237,8 +226,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1F8AC412D9EAEF9009A1DB1 /* NavigationNode.swift in Sources */,
-				A1F8AC422D9EAEF9009A1DB1 /* NavigationState.swift in Sources */,
 				A1F8AC2C2D9EAD7B009A1DB1 /* Item.swift in Sources */,
 				A1F8AC572D9F7D07009A1DB1 /* Injector.swift in Sources */,
 				A1F8AC632D9FACBC009A1DB1 /* MarketRouter.swift in Sources */,
@@ -247,7 +234,6 @@
 				A1F8AC4C2D9EBF5F009A1DB1 /* MarketListViewModel.swift in Sources */,
 				A1F8AC4A2D9EBF4B009A1DB1 /* MarketListItemView.swift in Sources */,
 				A1F8AC4F2D9EBFC1009A1DB1 /* MarketRepository.swift in Sources */,
-				A1F8AC402D9EAEF9009A1DB1 /* NavigationContainerView.swift in Sources */,
 				A1F8AC622D9FACBC009A1DB1 /* AppRouter.swift in Sources */,
 				A1F8AC282D9EAD7B009A1DB1 /* MVarchApp.swift in Sources */,
 				A1F8AC552D9F7596009A1DB1 /* MarketModelKey.swift in Sources */,
@@ -466,6 +452,14 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		A1F8AC652D9FADA8009A1DB1 /* NavigationGraph */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NavigationGraph;
+		};
+		A1F8AC672D9FB1D3009A1DB1 /* NavigationGraph */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NavigationGraph;
+		};
+		A1F8AC692D9FB1E5009A1DB1 /* NavigationGraph */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NavigationGraph;
 		};

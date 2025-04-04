@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import NavigationGraph
 
-enum AppRoute: NavigationRoute {
+enum AppRoute: NavigationGraphRoute {
     case market(MarketRoute)
 }
 
