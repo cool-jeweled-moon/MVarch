@@ -7,21 +7,20 @@
 
 import SwiftUI
 
-enum Route: Identifiable, Hashable {
-    var id: String { "\(hashValue)" }
-    
+enum AppRoute: NavigationRoute {
     case market(MarketRoute)
 }
 
-struct MainRouter {
-    let route: Route
+struct AppRouter {
+    let route: AppRoute
     let injector: Injector
 
     @ViewBuilder
-    func configure() -> some View {
+    func build() -> some View {
         switch route {
         case let .market(route):
-            MarketRouter(route: route, injector: injector).configure()
+            MarketRouter(route: route, injector: injector)
+                .build()
         }
     }
 }

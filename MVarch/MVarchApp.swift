@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import NavigationGraph
 
 @main
 struct MVarchApp: App {
@@ -14,15 +15,15 @@ struct MVarchApp: App {
     private let injector = Injector()
 
     @State
-    private var navigationState = NavigationState(root: .market(.list))
+    private var navigationState = NavigationGraphState<AppRoute>(root: .market(.list))
 
     var body: some Scene {
         WindowGroup {
-            NavigationContainerView(
-                node: navigationState.root,
-                injector: injector
-            )
-            .environment(navigationState)
+            NavigationGraphView(node: navigationState.root) { route in
+                AppRouter(route: route, injector: injector)
+                    .build()
+            }
+                .environment(navigationState)
 //                .onFirstAppear {
 //                    UNUserNotificationCenter.current()
 //                        .requestAuthorization(

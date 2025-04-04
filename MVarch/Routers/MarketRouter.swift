@@ -17,7 +17,7 @@ struct MarketRouter {
     let injector: Injector
 
     @ViewBuilder
-    func configure() -> some View {
+    func build() -> some View {
         switch route {
         case .list:
             let model = MarketModel(
