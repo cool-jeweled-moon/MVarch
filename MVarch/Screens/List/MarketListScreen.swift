@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MarketListScreen: View {
 
-    var viewModel: MarketViewModel
+    @Environment(\.marketModel)
+    private var viewModel
 
     var body: some View {
         List {

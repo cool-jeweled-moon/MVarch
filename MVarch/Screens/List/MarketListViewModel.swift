@@ -7,12 +7,27 @@
 
 import Foundation
 
-//protocol MarketListViewModelProtocol: ObservableObject {
-//    func observeItems() async
-//}
+protocol MarketModelProtocol: Observable {
+    var items: [MarketListItem] { get }
+    var isLoading: Bool { get }
+    var error: Error? { get }
+
+    func observeItems() async
+}
 
 @Observable
-class MarketViewModel {
+class MarketModelMock: MarketModelProtocol {
+    var items: [MarketListItem] = []
+    var isLoading: Bool = false
+    var error: Error?
+
+    func observeItems() async {
+
+    }
+}
+
+@Observable
+class MarketModel: MarketModelProtocol {
     var items: [MarketListItem] = []
     var isLoading: Bool = false
     var error: Error? = nil

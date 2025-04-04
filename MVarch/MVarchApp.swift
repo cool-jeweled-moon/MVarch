@@ -11,14 +11,18 @@ import SwiftData
 @main
 struct MVarchApp: App {
 
+    private let injector = Injector()
+
     @State
     private var navigationState = NavigationState(root: .market(.list))
 
-    private let injector = Injector()
-
     var body: some Scene {
         WindowGroup {
-            NavigationContainerView(node: navigationState.root)
+            NavigationContainerView(
+                node: navigationState.root,
+                injector: injector
+            )
+            .environment(navigationState)
 //                .onFirstAppear {
 //                    UNUserNotificationCenter.current()
 //                        .requestAuthorization(
@@ -31,8 +35,6 @@ struct MVarchApp: App {
 //                            }
 //                        }
 //                }
-                .environment(navigationState)
-                .environment(injector)
         }
 //        .modelContainer(modelContainer)
     }

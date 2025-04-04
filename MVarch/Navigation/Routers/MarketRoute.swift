@@ -20,11 +20,12 @@ struct MarketRouter {
     func configure() -> some View {
         switch route {
         case .list:
-            let viewModel = MarketViewModel(
+            let model = MarketModel(
                 repository: injector.marketRepository,
                 mapper: MarketListViewModelMapper()
             )
-            MarketListScreen(viewModel: viewModel)
+            MarketListScreen()
+                .environment(\.marketModel, model)
         case .filter:
             MarketFilterScreen()
         }

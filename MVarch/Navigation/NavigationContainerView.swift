@@ -11,8 +11,7 @@ struct NavigationContainerView: View {
     @State
     private(set) var node: NavigationNode
 
-    @Environment(Injector.self)
-    private var injector
+    let injector: Injector
 
     var body: some View {
         NavigationStack(path: $node.path) {
@@ -21,10 +20,10 @@ struct NavigationContainerView: View {
                     MainRouter(route: route, injector: injector).configure()
                 }
                 .sheet(item: $node.sheet) { sheetNode in
-                    NavigationContainerView(node: sheetNode)
+                    NavigationContainerView(node: sheetNode, injector: injector)
                 }
                 .fullScreenCover(item: $node.fullScreenCover) { coverNode in
-                    NavigationContainerView(node: coverNode)
+                    NavigationContainerView(node: coverNode, injector: injector)
                 }
         }
         .id(node.navigationHash)

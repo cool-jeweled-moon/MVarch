@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MarketFilterScreen: View {
 
-//    var viewModel: MarketViewM/odel
+    @Environment(\.marketModel)
+    private var viewModel
 
     var body: some View {
         Text("kek")
