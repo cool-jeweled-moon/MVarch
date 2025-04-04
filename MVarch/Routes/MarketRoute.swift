@@ -10,15 +10,10 @@ import SwiftUI
 enum MarketRoute: Hashable {
     case list
     case filter
-}
-
-struct MarketRouter {
-    let route: MarketRoute
-    let injector: Injector
 
     @ViewBuilder
-    func build() -> some View {
-        switch route {
+    func build(injector: Injector) -> some View {
+        switch self {
         case .list:
             let model = MarketModel(
                 repository: injector.marketRepository,

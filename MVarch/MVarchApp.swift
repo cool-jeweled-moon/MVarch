@@ -19,9 +19,8 @@ struct MVarchApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NavigationGraphView(node: navigationState.root) { route in
-                AppRouter(route: route, injector: injector)
-                    .build()
+            NavigationGraphView(node: navigationState.root) {
+                $0.build(injector: injector)
             }
                 .environment(navigationState)
 //                .onFirstAppear {
